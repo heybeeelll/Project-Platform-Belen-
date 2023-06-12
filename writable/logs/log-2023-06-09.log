@@ -1,0 +1,254 @@
+INFO - 2023-06-09 05:45:29 --> CSRF token verified.
+INFO - 2023-06-09 07:59:23 --> CSRF token verified.
+CRITICAL - 2023-06-09 07:59:23 --> Undefined array key "NAMA"
+in APPPATH\Views\asisten\search.php on line 21.
+ 1 APPPATH\Views\asisten\search.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NAMA"', 'C:\\Users\\Basisdata\\bebel\\app\\Views\\asisten\\search.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\Basisdata\\bebel\\app\\Views\\asisten\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('asisten/search', [], true)
+ 5 APPPATH\Controllers\AsistenController.php(80): view('asisten/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->search()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-09 08:00:01 --> CSRF token verified.
+INFO - 2023-06-09 08:00:35 --> CSRF token verified.
+INFO - 2023-06-09 08:00:54 --> CSRF token verified.
+CRITICAL - 2023-06-09 08:03:32 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('asisten/search', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-09 08:03:44 --> CSRF token verified.
+INFO - 2023-06-09 08:32:37 --> CSRF token verified.
+INFO - 2023-06-09 08:33:56 --> CSRF token verified.
+INFO - 2023-06-09 08:34:58 --> CSRF token verified.
+INFO - 2023-06-09 08:35:17 --> CSRF token verified.
+INFO - 2023-06-09 08:36:39 --> CSRF token verified.
+INFO - 2023-06-09 08:42:33 --> CSRF token verified.
+INFO - 2023-06-09 08:42:49 --> CSRF token verified.
+INFO - 2023-06-09 08:50:10 --> CSRF token verified.
+INFO - 2023-06-09 09:01:21 --> CSRF token verified.
+INFO - 2023-06-09 09:01:55 --> CSRF token verified.
+ERROR - 2023-06-09 09:01:55 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\Basisdata\bebel\app\Models\LoginModel.php(15): CodeIgniter\BaseModel->first()
+#7 C:\Users\Basisdata\bebel\app\Controllers\Login.php(42): App\Models\LoginModel->cek(Array)
+#8 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Login->check()
+#9 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Basisdata\bebel\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisd...')
+#13 {main}
+CRITICAL - 2023-06-09 09:01:55 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `login`
+WHERE `username` = (\'heybeeelll\',\'bebel982\')
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `login`
+WHERE `username` = (\'heybeeelll\',\'bebel982\')
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `login`
+WHERE `username` = (\'heybeeelll\',\'bebel982\')
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\LoginModel.php(15): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Login.php(42): App\Models\LoginModel->cek([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->check()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-09 09:04:22 --> CSRF token verified.
+ERROR - 2023-06-09 09:04:22 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\Basisdata\bebel\app\Models\LoginModel.php(15): CodeIgniter\BaseModel->first()
+#7 C:\Users\Basisdata\bebel\app\Controllers\Login.php(42): App\Models\LoginModel->cek(Array)
+#8 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Login->check()
+#9 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Basisdata\bebel\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisd...')
+#13 {main}
+CRITICAL - 2023-06-09 09:04:22 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `login`
+WHERE `username` = (\'heybeeelll\',\'bebel982\')
+AND `password` = (\'heybeeelll\',\'bebel982\')
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `login`
+WHERE `username` = (\'heybeeelll\',\'bebel982\')
+AND `password` = (\'heybeeelll\',\'bebel982\')
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `login`
+WHERE `username` = (\'heybeeelll\',\'bebel982\')
+AND `password` = (\'heybeeelll\',\'bebel982\')
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\LoginModel.php(15): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Login.php(42): App\Models\LoginModel->cek([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->check()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-09 09:04:37 --> CSRF token verified.
+ERROR - 2023-06-09 09:04:37 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\Basisdata\bebel\app\Models\LoginModel.php(15): CodeIgniter\BaseModel->first()
+#7 C:\Users\Basisdata\bebel\app\Controllers\Login.php(42): App\Models\LoginModel->cek(Array)
+#8 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Login->check()
+#9 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Basisdata\bebel\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisd...')
+#13 {main}
+CRITICAL - 2023-06-09 09:04:37 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `login`
+WHERE `username` = (\'heybeeelll\',\'bebel982\')
+AND `password` = (\'heybeeelll\',\'bebel982\')
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `login`
+WHERE `username` = (\'heybeeelll\',\'bebel982\')
+AND `password` = (\'heybeeelll\',\'bebel982\')
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `login`
+WHERE `username` = (\'heybeeelll\',\'bebel982\')
+AND `password` = (\'heybeeelll\',\'bebel982\')
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\LoginModel.php(15): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Login.php(42): App\Models\LoginModel->cek([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->check()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-09 09:06:59 --> CSRF token verified.
+INFO - 2023-06-09 09:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 09:06:59 --> Invalid file: "/asisten.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/asisten.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/asisten', [], true)
+ 3 APPPATH\Controllers\Login.php(46): view('/asisten')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->check()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-09 09:07:45 --> CSRF token verified.
+INFO - 2023-06-09 09:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 09:07:45 --> Undefined variable $asisten
+in APPPATH\Views\AsistenView.php on line 18.
+ 1 APPPATH\Views\AsistenView.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asisten', 'C:\\Users\\Basisdata\\bebel\\app\\Views\\AsistenView.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\Basisdata\\bebel\\app\\Views\\AsistenView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('AsistenView', [], true)
+ 5 APPPATH\Controllers\Login.php(46): view('AsistenView')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->check()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+CRITICAL - 2023-06-09 09:14:42 --> Call to undefined method App\Models\LoginModel::getAsisten
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Login.php(21): CodeIgniter\Model->__call('getAsisten', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-09 09:15:22 --> CSRF token verified.
+INFO - 2023-06-09 09:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 09:15:22 --> Undefined variable $asisten
+in APPPATH\Views\AsistenView.php on line 18.
+ 1 APPPATH\Views\AsistenView.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asisten', 'C:\\Users\\Basisdata\\bebel\\app\\Views\\AsistenView.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\Basisdata\\bebel\\app\\Views\\AsistenView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('AsistenView', [], true)
+ 5 APPPATH\Controllers\Login.php(49): view('AsistenView')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->check()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-09 09:18:06 --> CSRF token verified.
+INFO - 2023-06-09 09:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 09:18:06 --> Undefined variable $asisten
+in APPPATH\Views\AsistenView.php on line 18.
+ 1 APPPATH\Views\AsistenView.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asisten', 'C:\\Users\\Basisdata\\bebel\\app\\Views\\AsistenView.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\Basisdata\\bebel\\app\\Views\\AsistenView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('AsistenView', [], true)
+ 5 APPPATH\Controllers\Login.php(49): view('AsistenView')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->check()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-09 09:20:19 --> CSRF token verified.
+INFO - 2023-06-09 09:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 09:20:19 --> Undefined variable $asisten
+in APPPATH\Views\AsistenView.php on line 18.
+ 1 APPPATH\Views\AsistenView.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asisten', 'C:\\Users\\Basisdata\\bebel\\app\\Views\\AsistenView.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\Basisdata\\bebel\\app\\Views\\AsistenView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('AsistenView', [], true)
+ 5 APPPATH\Controllers\Login.php(51): view('AsistenView')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->check()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-09 09:23:54 --> CSRF token verified.
+INFO - 2023-06-09 09:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

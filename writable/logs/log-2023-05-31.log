@@ -1,0 +1,58 @@
+INFO - 2023-05-31 07:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 07:06:43 --> CSRF token verified.
+ERROR - 2023-05-31 07:06:43 --> mysqli_sql_exception: Table 'platform.news' doesn't exist in C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ne...', 0)
+#1 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ne...')
+#2 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ne...')
+#3 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ne...', Array, false)
+#4 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\Basisdata\bebel\app\Controllers\News.php(68): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\News->create()
+#10 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#11 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\Basisdata\bebel\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\Basisdata\bebel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisd...')
+#14 {main}
+CRITICAL - 2023-05-31 07:06:44 --> Table 'platform.news' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `news` (`title`, `slug`, `body`) VALUES (\'bebel\', \'bebel\', \'bebel bebel bebel\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `news` (`title`, `slug`, `body`) VALUES (\'bebel\', \'bebel\', \'bebel bebel bebel\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `news` (`title`, `slug`, `body`) VALUES (\'bebel\', \'bebel\', \'bebel bebel bebel\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `news` (`title`, `slug`, `body`) VALUES (:title:, :slug:, :body:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\News.php(68): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\News->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-05-31 07:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 07:08:29 --> CSRF token verified.
+INFO - 2023-05-31 07:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 07:17:53 --> CSRF token verified.
+INFO - 2023-05-31 07:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 07:18:06 --> CSRF token verified.
+INFO - 2023-05-31 07:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 07:18:11 --> CSRF token verified.
+INFO - 2023-05-31 07:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 07:18:53 --> CSRF token verified.
+INFO - 2023-05-31 07:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 07:19:06 --> CSRF token verified.
+INFO - 2023-05-31 07:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 07:19:14 --> CSRF token verified.
+INFO - 2023-05-31 07:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 07:19:35 --> CSRF token verified.
+INFO - 2023-05-31 07:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 07:19:39 --> CSRF token verified.
+INFO - 2023-05-31 07:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 07:19:45 --> CSRF token verified.
+INFO - 2023-05-31 07:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 07:41:54 --> CSRF token verified.
+INFO - 2023-05-31 07:44:15 --> CSRF token verified.

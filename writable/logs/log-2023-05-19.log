@@ -1,0 +1,83 @@
+CRITICAL - 2023-05-19 04:25:05 --> Class "App\Models\TodoModel" not found
+in APPPATH\Controllers\Todo.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Todo->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+CRITICAL - 2023-05-19 04:28:15 --> Invalid file: "/todo/todolist.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/todo/todolist.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/todo/todolist', [], true)
+ 3 APPPATH\Controllers\Todo.php(23): view('/todo/todolist', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Todo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todo))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+CRITICAL - 2023-05-19 04:29:04 --> Invalid file: "layout/template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/todo/ViewTodo', [], true)
+ 4 APPPATH\Controllers\Todo.php(23): view('/todo/ViewTodo', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Todo->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todo))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+CRITICAL - 2023-05-19 04:29:06 --> Invalid file: "layout/template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/todo/ViewTodo', [], true)
+ 4 APPPATH\Controllers\Todo.php(23): view('/todo/ViewTodo', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Todo->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todo))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+CRITICAL - 2023-05-19 06:26:08 --> Invalid file: "profil.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profil.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('profil', [], true)
+ 3 APPPATH\Controllers\Ktp.php(9): view('profil')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ktp->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ktp))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+CRITICAL - 2023-05-19 09:10:36 --> Undefined array key "pesan"
+in APPPATH\Controllers\PesanController.php on line 9.
+ 1 APPPATH\Controllers\PesanController.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pesan"', 'C:\\Users\\Basisdata\\bebel\\app\\Controllers\\PesanController.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesanController->proses()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesanController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+CRITICAL - 2023-05-19 09:11:08 --> syntax error, unexpected token ";", expecting variable or "{" or "$"
+in APPPATH\Views\tampilstatus.php on line 8.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilstatus', [], true)
+ 3 APPPATH\Controllers\Mahasiswa.php(17): view('tampilstatus', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->proses()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+CRITICAL - 2023-05-19 09:12:57 --> Undefined array key "nama"
+in APPPATH\Controllers\Mahasiswa.php on line 14.
+ 1 APPPATH\Controllers\Mahasiswa.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\Users\\Basisdata\\bebel\\app\\Controllers\\Mahasiswa.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->proses()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+CRITICAL - 2023-05-19 09:14:02 --> Undefined array key "pesan"
+in APPPATH\Controllers\PesanController.php on line 9.
+ 1 APPPATH\Controllers\PesanController.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pesan"', 'C:\\Users\\Basisdata\\bebel\\app\\Controllers\\PesanController.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesanController->proses()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesanController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')

@@ -1,0 +1,67 @@
+INFO - 2023-06-08 03:32:53 --> CSRF token verified.
+CRITICAL - 2023-06-08 03:32:53 --> Undefined property: App\Controllers\AsistenController::$asistenModel
+in APPPATH\Controllers\AsistenController.php on line 62.
+ 1 APPPATH\Controllers\AsistenController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AsistenController::$asistenModel', 'C:\\Users\\Basisdata\\bebel\\app\\Controllers\\AsistenController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-08 03:34:18 --> CSRF token verified.
+CRITICAL - 2023-06-08 03:34:18 --> Undefined property: App\Controllers\AsistenController::$asistenModel
+in APPPATH\Controllers\AsistenController.php on line 62.
+ 1 APPPATH\Controllers\AsistenController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AsistenController::$asistenModel', 'C:\\Users\\Basisdata\\bebel\\app\\Controllers\\AsistenController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-08 03:34:25 --> CSRF token verified.
+CRITICAL - 2023-06-08 03:34:25 --> Undefined property: App\Controllers\AsistenController::$asistenModel
+in APPPATH\Controllers\AsistenController.php on line 62.
+ 1 APPPATH\Controllers\AsistenController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AsistenController::$asistenModel', 'C:\\Users\\Basisdata\\bebel\\app\\Controllers\\AsistenController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-08 03:36:16 --> CSRF token verified.
+CRITICAL - 2023-06-08 03:36:16 --> Call to a member function hapus() on null
+in APPPATH\Controllers\AsistenController.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->delete()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-08 03:36:24 --> CSRF token verified.
+CRITICAL - 2023-06-08 03:36:24 --> Call to a member function hapus() on null
+in APPPATH\Controllers\AsistenController.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->delete()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-08 03:37:43 --> CSRF token verified.
+INFO - 2023-06-08 03:38:35 --> CSRF token verified.
+CRITICAL - 2023-06-08 03:38:35 --> Undefined array key "no"
+in APPPATH\Models\AsistenModel.php on line 15.
+ 1 APPPATH\Models\AsistenModel.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "no"', 'C:\\Users\\Basisdata\\bebel\\app\\Models\\AsistenModel.php', 15)
+ 2 APPPATH\Controllers\AsistenController.php(31): App\Models\AsistenModel->simpan([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Basisdata\\bebel\\public\\index.php')
+INFO - 2023-06-08 03:39:24 --> CSRF token verified.
+INFO - 2023-06-08 03:39:46 --> CSRF token verified.
+INFO - 2023-06-08 03:42:56 --> CSRF token verified.
+INFO - 2023-06-08 03:43:37 --> CSRF token verified.
+INFO - 2023-06-08 03:44:21 --> CSRF token verified.
+INFO - 2023-06-08 03:54:00 --> CSRF token verified.
+INFO - 2023-06-08 03:54:35 --> CSRF token verified.
+INFO - 2023-06-08 03:55:46 --> CSRF token verified.
+INFO - 2023-06-08 03:56:47 --> CSRF token verified.
+INFO - 2023-06-08 03:57:15 --> CSRF token verified.
+INFO - 2023-06-08 04:32:45 --> CSRF token verified.
+INFO - 2023-06-08 04:35:23 --> CSRF token verified.
+INFO - 2023-06-08 04:36:15 --> CSRF token verified.
